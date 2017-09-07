@@ -10,6 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Mary Ashley Samuelson.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 # ----------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
@@ -69,7 +70,7 @@ def test_sum_more_cosines():
     print('       actual:   ', answer)
 
     # Test 3
-    expected =
+    expected = 2.0806046
     answer = sum_more_cosines(-1, 1)
     print('Test 3 expected: ', expected)
     print('       actual:   ', answer)
@@ -106,7 +107,17 @@ def sum_more_cosines(m, n):
     #   Just   range(blah)   where blah is a single variable.
     #   Reason: To ensure that you get more practice using variables.
     # ------------------------------------------------------------------
+    if n < 0:
+        n = -n
 
+    answer = 0
+    for i in range(n+1):
+        if n == 0:
+            answer = math.cos(0)
+            break
+        answer += math.cos(i*(math.pi/180))
+
+    return answer
 
 
 def test_count_sines_from():
