@@ -7,8 +7,8 @@ A subsequent module lets you practice the ACCUMULATOR pattern in another classic
    IN GRAPHICS:   x = x + pixels
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Mary Ashley Samuelson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 # ----------------------------------------------------------------------
@@ -62,6 +62,18 @@ def test_sum_more_cosines():
     print('Test 1 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
+    # Test 2
+    expected = 0.02082
+    answer = sum_more_cosines(-4, 1)
+    print('Test 2 expected: ', expected, '(approximately)')
+    print('       actual:   ', answer)
+
+    # Test 3
+    expected =
+    answer = sum_more_cosines(-1, 1)
+    print('Test 3 expected: ', expected)
+    print('       actual:   ', answer)
+
     # ------------------------------------------------------------------
     # TO DO: 2 (continued).
     # Below this comment, add 2 more test cases of your own choosing.
@@ -94,6 +106,7 @@ def sum_more_cosines(m, n):
     #   Just   range(blah)   where blah is a single variable.
     #   Reason: To ensure that you get more practice using variables.
     # ------------------------------------------------------------------
+
 
 
 def test_count_sines_from():
